@@ -1,27 +1,37 @@
-/* skills style */
-#example{
-    margin-left: 85%;
-    margin-bottom: ;
-    margin-right: %;
+*{
+    box-sizing: border-box;
+}
+/* background-image */
+header {
+    /* background-color: #4192d4; Blue header background */
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBx15SAqwN7GMrgfC0FhfxFVURQ2rv-Ct-ElWn9xVHbQ&s); */
+    background-image: url(https://c1.wallpaperflare.com/preview/623/487/747/technology-code-coding-computer.jpg);
+    /* filter:blur(100%); */
+    background-size:cover;
+    margin-left: 20%;
+    margin-right: 2%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    color: #a198d4; /* White text color */
     text-align: center;
-    background-color:black /* White background for sections */
-    padding: 30px; 
-    /* margin: 20px 0; */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 40px 0;
 }
-/* Amazone image  */
-.set{
-    border-radius: 0%;
-    margin-top: -95%;
-    width: 200px;
-    /* position: absolute; */
-    top: 20px;
+.name{
+    margin-top:-15%;
+    color: #1a1717;
+    font-style: italic;
+} 
+.name2{
+    margin-right: 40%;
+    color: #1a1717;
+    font-style: italic;
 }
+/* main page background */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000; /* Light gray background */
+    background-color: #332d2d; /* Light gray background */
     color: #2c3e50; /* Dark text color */
     transition: background-color 0.5s ease;
     filter:blur(20%)
@@ -31,11 +41,26 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+.parent{
+    margin-left: 20%;
 }
+/* skills style */
+#example{
+    color: #2980b9;
+    width: 18%;
+    float:right; 
+    text-align: center;
+    background-color:black /* White background for sections */
+    padding : 30px; 
+    margin: 20px 0; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+@media (min-width:768px){
+    .parent{
+        display: flex;
+    }
+}
+
 .background-container {
     display: flex;
     align-items: center;
@@ -52,17 +77,6 @@ body, html {
     border-top-right-radius: 30px; /* Add curved corners to the top-right */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a box shadow for depth */
     position: relative;
-}
-
-.name{
-    margin-top:-15%;
-    color: #1a1717;
-    font-style: italic;
-} 
-.name2{
-    margin-right: 40%;
-    color: #1a1717;
-    font-style: italic;
 }
 /* Main Project box  */
 #projects {
@@ -93,6 +107,7 @@ body, html {
     color: #fff;
   }
   .project-container {
+    margin-left: 20%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
@@ -107,6 +122,30 @@ body, html {
   .project-card h3 { 
     margin-top: 0;
   }
+  /* discord clone image */
+.set-dis{
+    border-radius: 0%;
+    margin-top: -83%;
+    margin-bottom: 100px;
+}
+/*  spotify clone image */
+.set-spot{
+    border-radius: 0%;
+    margin-top: -200%;
+    margin-right: 50%;
+}
+/* amazone clone image */
+.set-amazone{
+    border-radius: 0%;
+    margin-top: -93%;
+    margin-left: 210%;
+}
+/* dalle clone image */
+.set-dalle{
+    border-radius: 0%;
+    margin-top: -200%;
+    margin-right: 50%;
+}
   .view-btn {
     background-color: #4CAF50;
     border: none;
@@ -216,20 +255,6 @@ img{
 h1{
     text-align: start;
     margin-inline-start: 20%;
-}
-header {
-    /* background-color: #4192d4; Blue header background */
-    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBx15SAqwN7GMrgfC0FhfxFVURQ2rv-Ct-ElWn9xVHbQ&s); */
-    background-image: url(https://c1.wallpaperflare.com/preview/623/487/747/technology-code-coding-computer.jpg);
-    /* filter:blur(100%); */
-    background-size:cover;
-    margin-left: 20%;
-    margin-right: 2%;
-    margin-top: 4%;
-    margin-bottom: 2%;
-    color: #a198d4; /* White text color */
-    text-align: center;
-    padding: 40px 0;
 }
 section {
     margin: 40px 0;
@@ -347,3 +372,8 @@ button:hover {
 /* #about, #projects, #achievements, #skills, #jokes {
     transition: background-color 0.5s ease;
 } */
+@media only screen and (max-width:600px){
+    body{
+        flex-wrap: wrap;
+    }
+}
